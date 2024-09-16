@@ -85,7 +85,7 @@ const Products = () => {
               className="w-full h-full "
             >
               <video
-                className="rounded-lg"
+                className="rounded-lg "
                 src={`https://files.refokus.com/storage/v1/object/public/Portfolio%20Videos/${elem.title
                   .toLowerCase()
                   .replace(/\s/g, "")}-43.webm`}
