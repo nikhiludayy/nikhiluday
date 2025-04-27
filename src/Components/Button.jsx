@@ -11,9 +11,9 @@ const Button = ({ title = "Get Started" }) => {
         transition: { duration: 0.4, ease: [0.4, 0, 0.2, 1] },
       }} // Scale effect on hover
       whileTap={{ scale: 0.95, backgroundColor: "#1D4ED8" }} // Slight shrink on click
-      className="max-w-40 px-4 py-2 bg-zinc-100 text-black overflow-hidden rounded-full flex gap-5 justify-between items-center"
+      className="w-40 px-4 py-2 bg-zinc-100 text-black overflow-hidden rounded-full flex gap-4 justify-center items-center"
     >
-      <span className="text-sm font-medium cursor-none">{title}</span>
+      <span className="text-sm font-medium cursor-pointer">{title}</span>
       <IoMdReturnRight className="text-sm" />
     </motion.div>
   );

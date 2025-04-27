@@ -11,9 +11,9 @@ const Product = ({ val, mover, index, opca, pos }) => {
         mover(index, (opca = false), "transparent");
       }}
       style={{ backgroundColor: pos.index === index ? pos.bg : "transparent" }}
-      className={`w-full px-5 py-14 hover:py-[5rem] text-white border-b-[1px] border-zinc-600 } transition-all duration-[.6s]`}
+      className={`max-w-screen-2xl mx-auto px-5 py-14 hover:py-[5rem] text-white border-b-[1px] border-zinc-600 } transition-all duration-[.6s]`}
     >
-      <div className="max-w-screen-xl mx-auto h-[10rem]  flex items-center justify-between">
+      <div className="max-w-screen-2xl mx-auto h-[10rem]  flex items-center justify-between">
         <h1 className="text-6xl capitalize font-semibold">{val.title}</h1>
         <div className="dets w-1/2 ">
           <p className="mb-10">{val.description}</p>

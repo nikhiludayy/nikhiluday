@@ -28,11 +28,13 @@ const Stripes = () => {
       number: 48,
     },
   ];
-  return <div className="w-full mt-20 border-zinc-600 border-t-[1px]  border-b-[1px]  flex">
-    {data.map((elem,index)=>{
-        return <Stripe key={index} index={index} val={elem}/>
-    })}
-  </div>;
+  return (
+    <div className="max-w-screen-2xl mx-auto mt-20 border-zinc-600 border-t-[1px]  border-b-[1px]  flex">
+      {data.map((elem, index) => {
+        return <Stripe key={index} index={index} val={elem} />;
+      })}
+    </div>
+  );
 };
 
 export default Stripes;

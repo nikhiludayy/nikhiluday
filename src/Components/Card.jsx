@@ -16,16 +16,16 @@ const Card = ({ width, start, para, button, bg, headone, headtwo }) => {
       onMouseOut={handleMouseOut}
       className={`${width} ${isHovered ? "text-black" : "text-white"} ${
         isHovered ? "bg-white" : bg
-      } rounded-xl p-5 flex gap-36 flex-col justify-between transition-all ease-in-out`}
+      } rounded-xl p-5 flex gap-16 flex-col justify-between transition-all ease-in-out`}
     >
-      <div className={`w-full ${isHovered ? "scale-[98%]" : "scale-[100%]"} transition-all duration-[.3s]`}>
-        <div className="w-full flex items-center justify-between">
+      <div className={` ${isHovered ? "scale-[98%]" : "scale-[100%]"} transition-all duration-[.3s]`}>
+        <div className=" flex items-center justify-between">
           <h3>{headone}</h3>
           <IoIosArrowRoundForward />
         </div>
         <h1 className="text-3xl font-medium mt-5">{headtwo}</h1>
       </div>
-      <div className="w-full">
+      <div className="">
         {start && (
           <h1 className="text-7xl font-semibold mb-5 tracking-tight leading-none">
             Start a Project
