@@ -58,10 +58,16 @@ const Home = () => {
     },
   ];
   return (
-    <div className=" px-4 sm:px-2 ">
-      {/* <Navbar /> */}
+    <div className="relative  px-4 sm:px-2 ">
+      {/* <Nav
+      bar /> */}
       <Work />
-      <div className="sm:h-[32em] h-[35em] border-t border-opacity-30 border-t-zinc-100 flex flex-col gap-10 justify-between py-7 sm:mt-20 -mt-[17em]">
+      <div className="relative blur-[6px]">
+        <div className="absolute md:top-[30em] lg:top-[23em] lg:left-[5em] lg:w-[15em] lg:h-[15em]   lg:shadow-[inset_25px_-25px_30px_-22px_#3b82f6] top-[-15em] left-[1em] rounded-full  w-[20em] h-[20em]   shadow-[inset_10px_20px_20px_-10px_#3b82f6]"></div>
+
+        <div className="absolute md:top-[65em] lg:top-[-4em] lg:right-[3em] lg:w-[20em] lg:h-[20em]  lg:shadow-[inset_-25px_25px_30px_-22px_#3b82f6]  top-[15em] right-[5em] rounded-full  w-[20em] h-[20em]   shadow-[inset_-10px_-20px_20px_-10px_#3b82f6]"></div>
+      </div>
+      <div className="relative sm:h-[32em] h-[35em] border-t border-opacity-30 border-t-zinc-100 flex flex-col gap-10 justify-between py-7 md:mt-[40em] lg:mt-20 -mt-[16em]">
         <div className="flex justify-between ">
           <div className="text-sm sm:mr-20 ">
             <h1>
@@ -132,7 +138,14 @@ const Home = () => {
           </h1>
         </div>
       </div>
+      <div className="relative top-[20em] blur-[8px]">
+        <div className="absolute lg:top-[15em] lg:left-[12em] lg:w-[15em] lg:h-[15em]   lg:shadow-[inset_25px_-25px_30px_-22px_#3b82f6] top-[5em] left-[1em] rounded-full  w-[20em] h-[20em]   shadow-[inset_10px_20px_20px_-10px_#3b82f6]"></div>
+
+        <div className="absolute  lg:top-[-6em] lg:right-[13em] lg:w-[20em] lg:h-[20em]  lg:shadow-[inset_-25px_25px_30px_-22px_#3b82f6]  top-[35em] right-[5em] rounded-full  w-[20em] h-[20em]   shadow-[inset_-10px_-20px_20px_-10px_#3b82f6]"></div>
+      </div>
+
       {/*  */}
+
       <div className="relative border-t border-opacity-30 border-t-zinc-100 my-14 ">
         <div className="absolute right-5 -top-5 bg-white rounded-full w-9 h-9 flex items-center justify-center">
           <svg
@@ -167,7 +180,7 @@ const Home = () => {
             <div className="h-full flex flex-row flex-wrap w-11/12 gap-4">
               {data1.map((elem, index) => {
                 return (
-                  <div className="flex-grow w-64  ">
+                  <div key={index} className="flex-grow w-64  ">
                     <div className="shadow-inner shadow-[#ffffff26]  border border-zinc-100 border-opacity-30 rounded-lg pt-12 pb-10 pl-6 pr-10 ">
                       <div className="flex flex-col pt-28  gap-3">
                         <div
@@ -190,9 +203,10 @@ const Home = () => {
           </div>
         </div>
       </div>
+
       {/* <Stripes />
       <Products /> */}
-      <div className="flex flex-col items-center border-t border-opacity-30 border-t-zinc-100 sm:mt-0 mt-[15em] ">
+      <div className="relative flex flex-col items-center border-t border-opacity-30 border-t-zinc-100 sm:mt-0 mt-[15em] ">
         <div className="pt-10">
           <h1 className="text-4xl font-semibold text-purple-400 tracking-wider">
             MY TECH STACK
@@ -209,7 +223,11 @@ const Home = () => {
           <Marquees />
         </div>
       </div>
+      <div className="relative top-[-30em] blur-[8px]">
+        <div className="absolute lg:top-[15em] lg:left-[5em] lg:w-[15em] lg:h-[15em]   lg:shadow-[inset_25px_-25px_30px_-22px_#3b82f6] top-[-15em] left-[1em] rounded-full  w-[20em] h-[20em]   shadow-[inset_10px_20px_20px_-10px_#3b82f6]"></div>
 
+        <div className="absolute  lg:top-[-6em] lg:right-[5em] lg:w-[20em] lg:h-[20em]  lg:shadow-[inset_-25px_25px_30px_-22px_#3b82f6]  top-[15em] right-[5em] rounded-full  w-[20em] h-[20em]   shadow-[inset_-10px_-20px_20px_-10px_#3b82f6]"></div>
+      </div>
       <Cards />
     </div>
   );

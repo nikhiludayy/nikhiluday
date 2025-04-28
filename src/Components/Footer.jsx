@@ -21,7 +21,7 @@ const Footer = () => {
     },
   ];
   return (
-    <div className="max-w-screen-2xl mx-auto px-5 ">
+    <div className="relative max-w-screen-2xl mx-auto px-5 ">
       <div className="pt-4 border-zinc-100 border-2 border-opacity-30 shadow-[0px_-10px_30px_rgba(255,255,255,.09)]  rounded-xl ">
         <div className="flex justify-end   gap-10 px-10 py-5 text-zinc-300  text-sm ">
           <div className="basis-3/4 sm:text-lg text-nowrap">

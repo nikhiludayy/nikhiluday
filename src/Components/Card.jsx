@@ -14,7 +14,7 @@ const Card = ({ width, start, para, button, bg, headone, headtwo }) => {
     <div
       onMouseOver={handleMouseOver}
       onMouseOut={handleMouseOut}
-      className={`${width} ${isHovered ? "text-black" : "text-white"} ${
+      className={`relative ${width} ${isHovered ? "text-black" : "text-white"} ${
         isHovered ? "bg-white" : bg
       } rounded-xl p-5 flex gap-16 flex-col justify-between transition-all ease-in-out`}
     >
