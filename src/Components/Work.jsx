@@ -82,10 +82,10 @@ const Work = () => {
 
         <div className=" flex flex-col items-center justify-center leading-[3.8em]">
           <div className="flex items-center justify-center gap-2">
-            <div className="w-20 h-20 object-cover rounded-full shadow-[-10px_0_10px_-6px_#3b82f6] overflow-hidden">
-              <img src="/src/assets/avatar.jpg" alt="" />
+            <div className="w-20 h-20 object-cover rounded-full shadow-[-10px_0_10px_-6px_#3b82f6]  overflow-hidden">
+              <img src="https://nikhiluday-portfolio.s3.ap-south-1.amazonaws.com/src/assets/avatar.jpg" alt="" />
             </div>
-            <h1 className="px-10 py-7 shadow-[inset_-10px_0_5px_-5px_#3b82f6] text-center rounded-e-[3em] border-opacity-30 text-sm">
+            <h1 className="px-10 py-7 shadow-[inset_-10px_0_5px_-5px_#3b82f6] text-center rounded-e-[3em]  border-opacity-30 text-sm">
               Hello, I'm Nikhil
             </h1>
           </div>
