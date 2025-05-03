@@ -7,7 +7,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 const Navbar = () => {
   const { scrollYProgress } = useScroll();
   const isLargeScreen = window.innerWidth > 640;
-  const scale = useTransform(scrollYProgress, [0, 0.05], [1, 0.8]);
+  const scale = useTransform(scrollYProgress, [0, 0.05,0.5], [1, 0.8,0.5]);
   const rotate = useTransform(scrollYProgress, [0, 0.1, 0.2], [0, 0, 0]);
   const PosX = useTransform(
     scrollYProgress,
@@ -76,6 +76,12 @@ const Navbar = () => {
           ) : (
             <Link
               key={index}
+              onClick={() => {
+                window.scrollTo({
+                  top: 0,
+                  behavior: "smooth",
+                });
+              }}
               className="text-sm font-medium flex items-center gap-1"
               to={
                 elem === "Home" ? "/" : elem.replace(/\s+/g, "").toLowerCase()

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion, useMotionValueEvent, useScroll } from "framer-motion";
 import Button from "./Button";
+import { Link } from "react-router-dom";
 const Work = () => {
   let [images, setimages] = useState([
     {
@@ -83,7 +84,10 @@ const Work = () => {
         <div className=" flex flex-col items-center justify-center leading-[3.8em]">
           <div className="flex items-center justify-center gap-2">
             <div className="w-20 h-20 object-cover rounded-full shadow-[-10px_0_10px_-6px_#3b82f6]  overflow-hidden">
-              <img src="https://nikhiluday-portfolio.s3.ap-south-1.amazonaws.com/src/assets/avatar.jpg" alt="" />
+              <img
+                src="https://nikhiluday-portfolio.s3.ap-south-1.amazonaws.com/src/assets/avatar.jpg"
+                alt=""
+              />
             </div>
             <h1 className="px-10 py-7 shadow-[inset_-10px_0_5px_-5px_#3b82f6] text-center rounded-e-[3em]  border-opacity-30 text-sm">
               Hello, I'm Nikhil
@@ -105,7 +109,17 @@ const Work = () => {
           </div>
           <div className="flex items-center gap-2 ">
             <h1 className="text-[4em] font-medium">DESIGNER</h1>
-            <Button title={"Let's Connect"} />
+            <Link
+              onClick={() => {
+                window.scrollTo({
+                  top: 0,
+                  behavior: "smooth",
+                });
+              }}
+              to={"/contact"}
+            >
+              <Button title={"Let's Connect"} />
+            </Link>
           </div>
           <div className="flex items-center gap-2">
             <h1 className="text-xs">

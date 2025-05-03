@@ -36,6 +36,12 @@ const Footer = () => {
               {["Home", "Projects", "About Me"].map((elem, index) => {
                 return (
                   <Link
+                    onClick={() => {
+                      window.scrollTo({
+                        top: 0,
+                        behavior: "smooth",
+                      });
+                    }}
                     className="block mt-2 hover:text-blue-400"
                     key={index}
                     to={
@@ -56,7 +62,7 @@ const Footer = () => {
               {data.map((elem, index) => {
                 return (
                   <Link
-                  key={index}
+                    key={index}
                     className="block mt-2 hover:text-blue-400"
                     target="_blank"
                     to={elem.link}
@@ -70,7 +76,7 @@ const Footer = () => {
               })}
             </div>
           </div>
-          <div className="basis-1/2 flex  flex-col items-end justify-center gap-4  ">
+          <div className="basis-1/2 flex  flex-col items-center justify-start gap-4  ">
             <p className="text-right text-base text-white">
               <span className="font-medium text-orange-400">Design</span> is not
               just what it looks like <br />
@@ -78,11 +84,11 @@ const Footer = () => {
               <span className="font-medium text-blue-400">Design</span> is how
               it works.
             </p>
-            <img
+            {/* <img
               src="https://assets-global.website-files.com/6334198f239547d0f9cd84b3/63455da11b54556c9d28aa3e_Badge-EnterprisePartner-Blue%201.svg"
               alt="footer"
               className="w-32 mt-5"
-            />
+            /> */}
           </div>
         </div>
         <div className="relative sm:h-[13rem] h-[7rem] text-center overflow-hidden  ">
@@ -102,7 +108,7 @@ const Footer = () => {
         <div className="flex justify-between">
           <h4>nikhiluday ©2025 - Privacy Policy</h4>
           <h4>Rajasthan, India</h4>
-          <SiteViewCounter />
+          {/* <SiteViewCounter /> */}
         </div>
       </div>
     </div>

@@ -51,9 +51,8 @@ const Aboutme = () => {
         </div>
 
         <div class=" relative  flex flex-col items-start justify-center md:mt-[40em] lg:mt-0  mt-0 gap-3 px-10 py-12 sm:flex-row">
-          <h1 class="text-left tracking-widest text-2xl ">
-            As a Software Engineer, I excel in building scalable applications,
-            enhancing user experiences, and streamlining development processes.
+          <h1 class="text-left tracking-wider text-2xl ">
+          As a Software Engineer and Designer, I excel at building scalable applications while crafting intuitive user interfaces, engaging motion graphics, and seamless visual experiences. I bridge logic and creativity to deliver products that are both powerful and beautifully designed.
           </h1>
           <div class="flex-grow sm:text-md text-lg">
             <p class="text-right font-light tracking-widest">

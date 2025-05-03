@@ -162,14 +162,15 @@ const Home = () => {
           </svg>
         </div>
         <div className="absolute top-32 right-4">
-          <Button title="About ME" />
+         <Link to={"/aboutme"}> <Button title="About ME" /></Link> 
         </div>
         <div className="flex flex-col py-8 gap-36">
           <div className="text-center">
             <p className="tracking-wide p-4">
-              I specialize in engineering bespoke solutions, consistently
-              pushing the limits in each project, with an unwavering dedication
-              to prioritizing excellence.
+              I specialize in crafting tailored solutions that merge technical
+              precision with creative design. Whether building systems or visual
+              experiences, I consistently push boundaries with a deep commitment
+              to quality and innovation.
             </p>
           </div>
 
